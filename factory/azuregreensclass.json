@@ -1,0 +1,9 @@
+{
+	"name": "azuregreensclass",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "d5248654-3631-42a5-a8bb-e3f7b8f97fd9",
+		"tenantId": "b5f01a7d-515e-4d34-b713-eeba71514386"
+	}
+}

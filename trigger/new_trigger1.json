@@ -1,0 +1,25 @@
+{
+	"name": "new_trigger1",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "Store_trigger",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/raw1/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/d892fc64-ab1d-4f48-996c-d7d8c8061aeb/resourceGroups/azureclass/providers/Microsoft.Storage/storageAccounts/azureclassadls",
+			"events": [
+				"Microsoft.Storage.BlobCreated",
+				"Microsoft.Storage.BlobDeleted"
+			]
+		}
+	}
+}
